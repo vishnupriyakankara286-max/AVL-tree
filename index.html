@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful AVL Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌳 AVL Tree Visualizer</h1>
+        <p class="subtitle">Self-Balancing Binary Search Tree</p>
+
+        <div class="controls">
+            <input type="number" id="value" placeholder="Enter value">
+
+            <button class="insert" onclick="insertValue()">➕ Insert</button>
+            <button class="delete" onclick="deleteValue()">🗑 Delete</button>
+            <button class="search" onclick="searchValue()">🔍 Search</button>
+            <button class="reset" onclick="resetTree()">🔄 Reset</button>
+        </div>
+
+        <div id="message">Enter a value and choose an operation.</div>
+
+        <div class="tree-container">
+            <canvas id="treeCanvas"></canvas>
+        </div>
+
+        <div class="info">
+            <div>
+                <span class="box green"></span>
+                Balanced Node
+            </div>
+            <div>
+                <span class="box yellow"></span>
+                Left/Right Rotation
+            </div>
+            <div>
+                <span class="box red"></span>
+                Search Result
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
